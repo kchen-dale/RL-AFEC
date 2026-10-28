@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Training / testing outputs
+tf_ckpts/
+logs/
+eval_results_*
+loss_pattern_after_*

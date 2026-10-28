@@ -1,0 +1,9 @@
+# Supported Python: 3.10 - 3.13 (TensorFlow 2.21 has no wheels for newer Python versions).
+# Tested on Python 3.10.22 and 3.13.7; see README.md for the exact resolved versions.
+tensorflow==2.21.0
+keras>=3.12,<4
+numpy>=1.26
+h5py>=3.11,<3.15
+tensorboard>=2.21,<2.22
+absl-py>=1.0
+tqdm>=4.0

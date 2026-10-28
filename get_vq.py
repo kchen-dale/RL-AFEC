@@ -5,11 +5,10 @@ from video_quality import load_model
 def get_video_quality(loss_pattern):
 
     NN_model = load_model()
-    vmaf = NN_model.predict(loss_pattern)
-    if vmaf < 0:
-        vmaf = np.array([[0]])
-    elif vmaf > 100:
-        vmaf = np.array([[100]])
-    
+    # Calling the model directly is much faster than predict() for a single sample.
+    vmaf = NN_model(loss_pattern, training=False).numpy()
+    # VMAF is defined on [0, 100]; the regressor can slightly overshoot either end.
+    vmaf = np.clip(vmaf, 0, 100)
+
     return vmaf
 
