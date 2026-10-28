@@ -11,7 +11,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 [Paper](https://dl.acm.org/doi/10.1145/3524273.3528184) ·
-[PDF](https://s18798.pcdn.co/minghao/wp-content/uploads/sites/28082/2023/07/ACM_MMsys.pdf) ·
+[PDF](https://dl.acm.org/doi/pdf/10.1145/3524273.3528184) ·
 [Citation](#citation)
 
 </div>
